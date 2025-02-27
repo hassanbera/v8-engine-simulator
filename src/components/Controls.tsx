@@ -6,8 +6,10 @@ const Controls = () => {
 
     return (
         <div className="controls">
-            <button onClick={nextStep}>Sonraki Adım</button>
-            <button onClick={reset}>Sıfırla</button>
+            <button onClick={() => { console.log("Next Step Clicked!"); nextStep(); }}>Sonraki Adım</button>
+            <button onClick={() => { console.log("Reset Clicked!"); reset(); }}>
+                Sıfırla
+            </button>
         </div>
     );
 };
